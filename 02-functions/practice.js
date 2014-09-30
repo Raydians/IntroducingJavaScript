@@ -1,19 +1,25 @@
-var add = function () {
+var add = function (a, b) {
+	return a + b;
 };
 
-var totalCost = function () {
+var totalCost = function (qty, price) {
+	return qty * price;
 };
 
-var cardString = function () {
+var cardString = function (rank, suit) {
+	return rank + " of " + suit;
 };
 
-var openTag = function () {
+var openTag = function (tag) {
+	return "<" + tag + ">";
 };
 
-var closeTag = function () {
+var closeTag = function (tag) {
+	return "</" + tag + ">";
 };
 
-var toTagString = function () {
+var toTagString = function (tag, content) {
+	return openTag(tag) + content + closeTag(tag);
 };
 
 

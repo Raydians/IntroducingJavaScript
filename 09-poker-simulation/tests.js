@@ -123,10 +123,12 @@ describe("#highCard", function () {
 });
 
 describe("#lowCard", function () {
+    it ("should return the card with the lowest rank", function () {
         var hand = [ {"suit":"clubs","rank":"ten"},{"suit":"spades","rank":"three"},
                      {"suit":"clubs","rank":"six"},{"suit":"hearts","rank":"three"},
                      {"suit":"spades","rank":"five"} ] ;
-    expect(lowCard(hand)).toEqual({"suit":"hearts","rank":"three"});
+        expect(lowCard(hand)).toEqual({"suit":"hearts","rank":"three"});
+    });
 });
 
 describe("#containsPair", function () {
